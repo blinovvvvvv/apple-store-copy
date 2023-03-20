@@ -1,0 +1,55 @@
+.colors {
+	@apply flex items-center gap-8 mt-6;
+	> span {
+		@apply text-gray font-medium w-[95px];
+	}
+	> div {
+		@apply flex gap-2 items-center;
+		> a {
+			@apply block border border-[#EEE] p-1.5 rounded-xl transition-all;
+			&.active {
+				@apply border-gray;
+			}
+			&:hover {
+				@apply border-gray;
+			}
+			> div {
+				@apply p-2.5 rounded-xl;
+			}
+		}
+	}
+}
+
+.option {
+	@apply flex items-center gap-8 my-8;
+
+	> .title {
+		@apply text-gray font-medium w-[95px];
+	}
+
+	> .variables {
+		@apply flex items-center flex-wrap gap-4 max-w-[350px];
+
+		> button {
+			@apply px-4 py-2 border-light-gray border-2 rounded-xl font-medium text-[14px] transition-all;
+
+			&.active {
+				@apply border-blue;
+			}
+			&:hover {
+				@apply border-blue;
+			}
+		}
+	}
+}
+
+.price {
+	@apply text-2xl font-semibold mt-8;
+}
+
+.add {
+	@apply w-full py-3 bg-blue text-white text-base font-medium rounded-xl mt-8 transition-all duration-300;
+	&:hover {
+		@apply bg-purple;
+	}
+}

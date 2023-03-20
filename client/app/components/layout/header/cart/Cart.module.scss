@@ -1,0 +1,16 @@
+.cart {
+	@apply text-gray flex items-center gap-2 relative;
+	&::after {
+		content: '';
+		@apply w-0 h-[1px] bg-gray absolute bottom-0 left-0 transition-all duration-300;
+	}
+	&:hover {
+		&::after {
+			content: '';
+			@apply w-full;
+		}
+	}
+	> .icon {
+		@apply text-gray;
+	}
+}

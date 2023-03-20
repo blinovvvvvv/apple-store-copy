@@ -1,0 +1,13 @@
+.quantity {
+	@apply flex items-center justify-center gap-4;
+
+	> button {
+		@apply p-1.5 bg-light-gray rounded-lg transition-all;
+		&:disabled {
+			@apply opacity-50;
+		}
+		&:not(:disabled):hover {
+			@apply bg-[#EEE];
+		}
+	}
+}

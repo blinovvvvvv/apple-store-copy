@@ -1,0 +1,14 @@
+.search {
+	flex: 0 1 450px;
+	> .input {
+		@apply w-full px-4 py-2 focus:border-gray border-b-2 border-light-gray transition-all duration-200 text-gray font-normal;
+		font-size: 15px;
+		outline: none;
+	}
+	> button {
+		@apply block text-[14px] h-full px-5 py-1.5 bg-[#EEE] rounded-xl transition-opacity;
+		&:hover {
+			@apply opacity-60;
+		}
+	}
+}

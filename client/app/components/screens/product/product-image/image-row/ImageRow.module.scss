@@ -1,0 +1,15 @@
+.row {
+	@apply flex flex-col gap-6;
+	
+	> .image {
+		@apply border-2 border-transparent py-2 rounded-xl transition-all;
+		&:hover {
+			@apply border-light-gray;
+		}
+		&.active {
+			@apply border-blue;
+		}
+		
+		
+	}
+}

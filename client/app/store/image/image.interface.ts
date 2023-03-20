@@ -1,0 +1,3 @@
+interface IImageInitialState {
+	selectedIndex: number
+}

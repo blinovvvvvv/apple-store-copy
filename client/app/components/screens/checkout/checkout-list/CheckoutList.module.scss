@@ -1,0 +1,38 @@
+.list {
+	> .item {
+		@apply grid gap-4 max-w-[900px] border-b-[1px] pb-2 mb-4 border-[#EEE] animate-opacity;
+		grid-template-columns: 200px 1fr 100px 100px 100px 15px;
+
+		> .price {
+			@apply font-medium text-[15px] self-center;
+		}
+		> .quantity {
+			@apply self-center text-center;
+		}
+
+		> .info {
+			@apply mt-2;
+			> .name {
+				@apply font-medium text-[15px] mb-1;
+			}
+			> .color {
+				@apply text-gray text-[14px] mb-0.5;
+			}
+			> .ram {
+				@apply text-gray text-[14px] mb-0.5;
+			}
+			> .storage {
+				@apply text-gray text-[14px];
+			}
+		}
+	}
+}
+
+.header {
+	@apply grid gap-4 max-w-[900px] text-gray font-medium text-[15px] mb-2;
+	grid-template-columns: 200px 1fr 100px 100px 100px 15px;
+	/* grid-column-start: 2; */
+	> div:first-child {
+		grid-column-start: 2;
+	}
+}

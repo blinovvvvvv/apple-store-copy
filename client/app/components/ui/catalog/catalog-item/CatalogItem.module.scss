@@ -1,0 +1,20 @@
+.item {
+	@apply flex flex-col shadow rounded-xl py-5 px-4 animate-scaleIn;
+	flex: 0 1 23.075%;
+	> .name {
+		@apply mt-auto font-medium;
+	}
+	> .price {
+	
+		> div {
+			@apply mb-4;
+		}
+		
+		> a {
+			@apply py-2 px-4 bg-black text-white rounded-2xl text-xs border-black border-[2px] transition-all;
+			&:hover {
+				@apply bg-white text-black;
+			}
+		}
+	}
+}

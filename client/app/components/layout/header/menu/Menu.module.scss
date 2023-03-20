@@ -1,0 +1,17 @@
+.menu {
+	@apply flex items-center gap-6;
+
+	> .item {
+		@apply text-sm text-gray relative;
+		&::after {
+			content: '';
+			@apply w-0 h-[1px] bg-gray absolute -bottom-1/3 left-0 transition-all duration-300;
+		}
+		&:hover {
+			&::after {
+				content: '';
+				@apply w-full;
+			}
+		}
+	}
+}

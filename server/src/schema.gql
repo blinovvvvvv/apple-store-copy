@@ -1,0 +1,63 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CategoryEntity {
+  id: Float!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  slug: String!
+  products: [ProductEntity!]
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type ProductEntity {
+  id: Float!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  price: Float!
+  slug: String!
+  images: [String!]!
+  ramSize: [String!]
+  storageSize: [String!]
+  color: String!
+  allColors: [String!]
+  category: CategoryEntity!
+}
+
+type Query {
+  product: [ProductEntity!]!
+  productBySlug(slug: String!): ProductEntity!
+  findProduct(searchTerm: String!): [ProductEntity!]!
+  categoryBySlug(slug: String!): CategoryEntity!
+  category: [CategoryEntity!]!
+}
+
+type Mutation {
+  createProduct(data: CreateProductDto!): ProductEntity!
+  deleteProduct(id: Float!): Boolean!
+  createCategory(data: CreateCategoryDto!): CategoryEntity!
+}
+
+input CreateProductDto {
+  name: String!
+  price: Float!
+  slug: String!
+  images: [String!]!
+  color: String!
+  allColors: [String!]!
+  ramSize: [String!]
+  storageSize: [String!]
+  category: String!
+}
+
+input CreateCategoryDto {
+  name: String!
+  slug: String!
+}

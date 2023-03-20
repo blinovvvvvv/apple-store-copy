@@ -1,0 +1,15 @@
+.total {
+	@apply px-7 py-10 bg-[#EEE] self-start rounded-xl;
+	flex: 1 1 auto;
+
+	> .price {
+		@apply font-semibold text-xl mb-6;
+	}
+	> .order {
+		@apply font-medium w-full text-white py-2 bg-blue rounded-xl transition-colors;
+
+		&:hover {
+			@apply bg-purple;
+		}
+	}
+}

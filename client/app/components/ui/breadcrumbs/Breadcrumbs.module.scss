@@ -1,0 +1,13 @@
+.breadcrumbs {
+	@apply text-gray mb-3 text-[14px];
+
+	> span {
+		@apply mx-2;
+	}
+	> a {
+		@apply transition-all;
+		&:hover {
+			@apply text-black;
+		}
+	}
+}

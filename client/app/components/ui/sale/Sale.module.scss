@@ -1,0 +1,23 @@
+.sale {
+	@apply flex items-center justify-between shadow px-10 py-7 rounded-lg animate-scaleIn;
+
+	> div {
+		@apply self-stretch flex flex-col justify-between;
+
+		> h2 {
+			@apply font-extrabold text-3xl leading-tight text-left;
+			max-width: 610px;
+		}
+
+		> a {
+			@apply px-6 font-medium py-2 border-[2px] border-black bg-black text-white self-start rounded-3xl transition-all;
+			&:hover {
+				@apply bg-white text-black;
+			}
+		}
+	}
+
+	> img {
+		@apply mr-14;
+	}
+}

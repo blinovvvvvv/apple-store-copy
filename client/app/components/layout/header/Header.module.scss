@@ -1,0 +1,10 @@
+.header {
+	> .container {
+		@apply px-[16px] py-4 mx-auto flex items-center justify-between animate-opacity;
+		max-width: 1280px;
+
+		> div {
+			@apply flex items-center gap-12;
+		}
+	}
+}

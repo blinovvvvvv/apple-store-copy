@@ -1,3 +1,4 @@
+## Stack: React Next.js TailwindCSS SCSS Graphql Apollo Redux/Toolkit Redux-Persist
 
 ## Getting Started
 
